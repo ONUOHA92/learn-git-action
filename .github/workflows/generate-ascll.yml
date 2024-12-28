@@ -1,0 +1,28 @@
+name: ASCII Art Generator
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  generate-ascii-art:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Check out the repository
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # Step 2: Run a script to generate ASCII art
+      - name: Generate ASCII Art
+        run: |
+          echo "    ______   _______  _        _______  _______ "
+          echo "   (  __  \ (  ___  )( (    /|(  ____ \(  ____ \\"
+          echo "   | (  \  )| (   ) ||  \  ( || (    \/| (    \/"
+          echo "   | |   ) || |   | ||   \ | || |      | (__    "
+          echo "   | |   | || |   | || (\ \) || | ____ |  __)   "
+          echo "   | |   ) || |   | || | \   || | \_  )| (      "
+          echo "   | (__/  )| (___) || )  \  || (___) || (____/\\"
+          echo "   (______/ (_______)|/    )_)(_______)(_______/"
+          echo "  
