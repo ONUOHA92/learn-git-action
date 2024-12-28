@@ -8,15 +8,18 @@ jobs:
          steps: 
            - name: Checkout repo
              uses: actions/checkout@v4
-             
+
            - name: Welcome Message
-             run: echo "My first github action job"
+             run:
+                 echo "My first github action job"
+                 ls - Ltra
+                 cat README.md
 
-           - name: List files
-             run: ls
+        #    - name: List files
+        #      run: ls
 
-           - name: Read files
-             run: cat README.md
+        #    - name: Read files
+        #      run: cat README.md
 
            
 
